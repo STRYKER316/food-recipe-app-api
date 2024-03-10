@@ -12,5 +12,5 @@
 * flake8 - Python Linting Tool
 * PostgreSQL - RDBMS for backend
 * Docker - Containerized Local Devlopment
-* GitHub Actions - Automate Unit-testing & Lint-Testing
+* GitHub Actions - CI tool for automated Unit-testing & Linting
 * Swagger - Documentation for the APIs
