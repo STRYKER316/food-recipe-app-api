@@ -140,3 +140,12 @@ AUTH_USER_MODEL = 'core.User'
 REST_FRAMEWORK = {
     'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
 }
+
+# DRF-spectacular API Documentation settings
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'Food-Recipe-App-API',
+    'DESCRIPTION': 'The API allows users to browse and search for various recipes, as well as create and manage their own recipes',
+    'VERSION': '1.0.0',
+    'SERVE_INCLUDE_SCHEMA': False,
+    # OTHER SETTINGS
+}
