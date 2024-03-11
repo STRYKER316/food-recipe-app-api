@@ -45,3 +45,4 @@ class CustomUserAdmin(UserAdmin):
 
 # Register your models here.
 admin.site.register(models.User, CustomUserAdmin)
+admin.site.register(models.Recipe)
