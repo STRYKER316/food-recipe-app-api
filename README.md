@@ -10,9 +10,10 @@
 * Python - Programming Language
 * Django - Python Web Framework
 * Django REST Framework - API development
+* drf-spectacular - Schema generation for the REST APIs
+* Pillow - Python Image Manipulation Library
 * flake8 - Python Linting Tool
 * PostgreSQL - RDBMS for backend
 * Docker - Containerized Local Devlopment
 * GitHub Actions - CI tool for automated Unit-testing & Linting
-* drf-spectacular - Schema generation for the APIs
 * Swagger - Browsable Documentation for the APIs
