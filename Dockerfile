@@ -24,7 +24,11 @@ RUN python -m venv /pyenv && \
     adduser \
         --disabled-password \
         --no-create-home \
-        django-app-user
+        django-app-user && \
+    mkdir -p /vol/web/media && \
+    mkdir -p /vol/web/static && \
+    chown -R django-app-user:django-app-user /vol && \
+    chmod -R 755 /vol
 
 ENV PATH="/pyenv/bin:$PATH"
 
