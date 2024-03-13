@@ -7,10 +7,12 @@
 
 
 ## Tools & Technologies
+* Python - Programming Language
 * Django - Python Web Framework
 * Django REST Framework - API development
 * flake8 - Python Linting Tool
 * PostgreSQL - RDBMS for backend
 * Docker - Containerized Local Devlopment
 * GitHub Actions - CI tool for automated Unit-testing & Linting
-* Swagger - Documentation for the APIs
+* drf-spectacular - Schema generation for the APIs
+* Swagger - Browsable Documentation for the APIs
