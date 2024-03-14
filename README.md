@@ -15,5 +15,8 @@
 * flake8 - Python Linting Tool
 * PostgreSQL - RDBMS for backend
 * Docker - Containerized Local Devlopment
+* Docker Compose - Run multiple containers with spcefied configs
 * GitHub Actions - CI tool for automated Unit-testing & Linting
 * Swagger - Browsable Documentation for the APIs
+* Nginx - Reverse Proxy
+* uWSGI - Server for the Django app
