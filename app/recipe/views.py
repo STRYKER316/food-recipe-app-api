@@ -101,6 +101,17 @@ class RecipeViewSet(viewsets.ModelViewSet):
         )
 
 
+@extend_schema_view(
+    list=extend_schema(
+        parameters=[
+            OpenApiParameter(
+                name='assigned_only',
+                type=OpenApiTypes.INT, enum=[0, 1],
+                description='Filter only assigned objects'
+            )
+        ]
+    )
+)
 class BaseRecipeAttributesViewset(mixins.DestroyModelMixin,
                                   mixins.UpdateModelMixin,
                                   mixins.ListModelMixin,
@@ -111,7 +122,16 @@ class BaseRecipeAttributesViewset(mixins.DestroyModelMixin,
 
     def get_queryset(self):
         """ Return objects for the current authenticated user only """
-        return self.queryset.filter(user=self.request.user).order_by('-name')
+        assigned_only = bool(
+            int(self.request.query_params.get('assigned_only', 0))
+        )
+        queryset = self.queryset
+        if assigned_only:
+            queryset = queryset.filter(recipe__isnull=False)
+
+        return queryset.filter(
+            user=self.request.user
+        ).order_by('-name').distinct()
 
 
 class TagViewSet(BaseRecipeAttributesViewset):
