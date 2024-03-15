@@ -20,3 +20,27 @@
 * Swagger - Browsable Documentation for the APIs
 * Nginx - Reverse Proxy
 * uWSGI - Server for the Django app
+
+
+## Connect to EC2 Deployment Server via SSH [WSL2 Agent]
+* Run these commands from ~/.ssh/ directory
+
+* Create SSH key-pairs, if you have not set them up already
+
+    ``` ssh-keygen -t rsa -b 4096 ```
+
+* Start SSH agent
+
+    ```eval `ssh-agent -s` ```
+
+* Add your SSH key to your SSH-agent
+
+    ``` ssh-add <private_ssh_key> ```
+
+    > **Note:** The command `ssh-add` adds private key identities (from your `~/.ssh` directory) to the authentication agent (`ssh-agent`), so that the ssh agent can take care of the authentication for you, and you don’t have to type in passwords at the terminal.
+
+* Connect to EC2 server
+
+    ``` ssh ec2-user@<Public IPv4 address> ```
+
+* Now, you have access to EC2 deployment server from you local machine
