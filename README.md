@@ -44,3 +44,5 @@
     ``` ssh ec2-user@<Public IPv4 address> ```
 
 * Now, you have access to EC2 deployment server from you local machine
+
+    API Address : ``` ec2-3-111-215-8.ap-south-1.compute.amazonaws.com/api/docs ```
