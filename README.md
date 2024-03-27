@@ -22,7 +22,7 @@
 * uWSGI - Server for the Django app
 
 
-## Connect to EC2 Deployment Server via SSH [WSL2 Agent]
+## Connect to Digital Ocean Droplet via SSH [WSL2 Agent]
 * Run these commands from ~/.ssh/ directory
 
 * Create SSH key-pairs, if you have not set them up already
@@ -39,10 +39,12 @@
 
     > **Note:** The command `ssh-add` adds private key identities (from your `~/.ssh` directory) to the authentication agent (`ssh-agent`), so that the ssh agent can take care of the authentication for you, and you don’t have to type in passwords at the terminal.
 
-* Connect to EC2 server
+* Connect to Digital Ocean Droplet
 
-    ``` ssh ec2-user@<Public IPv4 address> ```
+    ``` ssh root@<PUBLIC IPV4 ADDRESS> ```
 
-* Now, you have access to EC2 deployment server from you local machine
+* Now, you have access to the Deployment Server from you local machine
 
-    API Address : ``` ec2-3-111-215-8.ap-south-1.compute.amazonaws.com/api/docs ```
+    API Address : ``` <PUBLIC IPV4 ADDRESS>/api/docs ```
+
+    PUBLIC IPV4 ADDRESS of Droplet: ``` 143.244.133.245 ```
