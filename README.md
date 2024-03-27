@@ -1,6 +1,6 @@
 # Food-recipe-app-api
-* This repository contains the code for a food recipe app API. With this API, users can easily access a wide range of recipes and enhance their cooking experience.
-* The API allows users to browse and search for various recipes, as well as create and manage their own recipes.
+* This repository contains the code for a food recipe app API. With this API, users can easily access a variety of recipes and enhance their cooking experience.
+* The API allows users to browse and search for various recipes, and create and manage their own recipes.
 * It provides endpoints for retrieving recipe details, adding ingredients, and saving favorite recipes.
 * The app is built using Django and follows RESTful principles for API design.
 * It also utilizes a PostgreSQL database for storing recipe data.
@@ -14,8 +14,8 @@
 * Pillow - Python Image Manipulation Library
 * flake8 - Python Linting Tool
 * PostgreSQL - RDBMS for backend
-* Docker - Containerized Local Devlopment
-* Docker Compose - Run multiple containers with spcefied configs
+* Docker - Containerized Local Development
+* Docker Compose - Run multiple containers with specific configs
 * GitHub Actions - CI tool for automated Unit-testing & Linting
 * Swagger - Browsable Documentation for the APIs
 * Nginx - Reverse Proxy
@@ -25,7 +25,7 @@
 ## Connect to Digital Ocean Droplet via SSH [WSL2 Agent]
 * Run these commands from ~/.ssh/ directory
 
-* Create SSH key-pairs, if you have not set them up already
+* Create SSH key pairs, if you have not set them up already
 
     ``` ssh-keygen -t rsa -b 4096 ```
 
@@ -37,14 +37,14 @@
 
     ``` ssh-add <private_ssh_key> ```
 
-    > **Note:** The command `ssh-add` adds private key identities (from your `~/.ssh` directory) to the authentication agent (`ssh-agent`), so that the ssh agent can take care of the authentication for you, and you don’t have to type in passwords at the terminal.
+    > **Note:** The command `ssh-add` adds private key identities (from your `~/.ssh` directory) to the authentication agent (`ssh-agent`), so that the ssh-agent can take care of the authentication for you, and you don’t have to type in passwords at the terminal.
 
 * Connect to Digital Ocean Droplet
 
     ``` ssh root@<PUBLIC IPV4 ADDRESS> ```
 
-* Now, you have access to the Deployment Server from you local machine
+  Now, you have access to the Deployment Server from your local machine
 
-    API Address : ``` <PUBLIC IPV4 ADDRESS>/api/docs ```
+* API Address : ``` <PUBLIC IPV4 ADDRESS>/api/docs ```
 
-    PUBLIC IPV4 ADDRESS of Droplet: ``` 143.244.133.245 ```
+  PUBLIC IPV4 ADDRESS of Droplet: ``` 143.244.133.245 ```
