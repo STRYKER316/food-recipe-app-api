@@ -45,6 +45,5 @@
 
   Now, you have access to the Deployment Server from your local machine
 
-* API Address : ``` <PUBLIC IPV4 ADDRESS>/api/docs ```
-
-  PUBLIC IPV4 ADDRESS of Droplet: ``` 143.244.133.245 ```
+  ## Visit the API
+* API Address :  [143.244.133.245/api/docs](http://143.244.133.245/api/docs)
